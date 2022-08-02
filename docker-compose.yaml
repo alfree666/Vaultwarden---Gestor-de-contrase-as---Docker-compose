@@ -1,0 +1,16 @@
+version: "3.3"
+
+services:
+
+  vaultwarden:
+    image: vaultwarden/server:latest
+    container_name: vaultwarden
+    volumes:
+      - ./vaultwarden:/data/
+    ports:
+      - 8200:80
+    restart: unless-stopped
+
+    
+
+  
